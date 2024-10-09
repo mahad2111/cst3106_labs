@@ -24,10 +24,16 @@ The site uses a clear, bold sans-serif font to ensure readability and emphasis o
 - **Design**: The header contains navigation links with embedded icons for a clean, modern look. Links are styled with hover effects that change the text color to black for better visibility.
 - **Flexbox**: The header uses Flexbox for alignment, making it responsive and adaptable across different screen sizes.
 
+
+![Header Screenshot](/lab4/header.png)
+
 ### 3.2 Main Section
 - **Introduction**: This section introduces my background and expertise. It also includes a button that links to my resume in PDF format.
 - **Image**: The main section is complemented by an image (`mainimgfixed.png`) positioned to the right for visual balance.
 - **Flexbox Layout**: The section uses Flexbox to align text and the image side by side.
+
+
+![Main Section Screenshot](/lab4/content-section.png)
 
 ### 3.3 Skills Section
 - **Skills List**: A simple display of technical skills with a rating system using stars. The layout is designed to keep the focus on the key skills in HTML5, CSS3, Bootstrap5, and JavaScript.
@@ -36,6 +42,9 @@ The site uses a clear, bold sans-serif font to ensure readability and emphasis o
 ### 3.4 Footer
 - **Design**: The footer includes my contact information, social media links (LinkedIn and email), and a large "GET IN TOUCH" call to action for easy access.
 - **Flexbox Layout**: The footer is structured using Flexbox to ensure alignment and responsiveness.
+
+
+![Footer Screenshot](/lab4/footer.png)
 
 ---
 
@@ -58,4 +67,3 @@ The website is designed to be fully responsive:
 ---
 
 Thank you for exploring my portfolio! Feel free to connect with me via the contact section below or through the provided social media links.
-
