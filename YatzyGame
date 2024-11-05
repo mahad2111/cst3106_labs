@@ -1,0 +1,30 @@
+import Dice from './Dice.js';
+import YatzyEngine from './YatzyEngine.js';
+
+class YatzyGame {
+    constructor() {
+        this.dice = new Dice();
+        this.engine = new YatzyEngine();
+        this.currentPlayer = 1;
+        this.round = 1;
+        this.totalScore = 0;
+    }
+
+    startNewGame() {
+        this.dice.reset();
+        this.engine = new YatzyEngine();
+        this.round = 1;
+        this.totalScore = 0;
+    }
+
+    endTurn() {
+        this.round++;
+        this.dice.reset();
+    }
+
+    endGame() {
+        console.log(`Game over! Total score: ${this.totalScore}`);
+    }
+}
+
+export default YatzyGame;
