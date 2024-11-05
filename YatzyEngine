@@ -1,0 +1,49 @@
+class YatzyEngine {
+    constructor() {
+        this.scores = {
+            ones: null, twos: null, threes: null, fours: null, fives: null, sixes: null,
+            threeOfKind: null, fourOfKind: null, fullHouse: null,
+            smallStraight: null, largeStraight: null, yahtzee: null, chance: null
+        };
+    }
+
+    calculateScore(category, diceValues) {
+        const counts = Array(7).fill(0);
+        diceValues.forEach(die => counts[die]++);
+
+        switch (category) {
+            case 'ones': case 'twos': case 'threes': case 'fours': case 'fives': case 'sixes':
+                const num = parseInt(category.charAt(0));
+                return counts[num] * num;
+            case 'threeOfKind':
+                return counts.some(count => count >= 3) ? diceValues.reduce((a, b) => a + b, 0) : 0;
+            case 'fourOfKind':
+                return counts.some(count => count >= 4) ? diceValues.reduce((a, b) => a + b, 0) : 0;
+            case 'fullHouse':
+                return counts.includes(3) && counts.includes(2) ? 25 : 0;
+            case 'smallStraight':
+                return this.hasSmallStraight(counts) ? 30 : 0;
+            case 'largeStraight':
+                return this.hasLargeStraight(counts) ? 40 : 0;
+            case 'yahtzee':
+                return counts.includes(5) ? 50 : 0;
+            case 'chance':
+                return diceValues.reduce((a, b) => a + b, 0);
+            default:
+                return 0;
+        }
+    }
+
+    hasSmallStraight(counts) {
+        return (counts[1] && counts[2] && counts[3] && counts[4]) ||
+               (counts[2] && counts[3] && counts[4] && counts[5]) ||
+               (counts[3] && counts[4] && counts[5] && counts[6]);
+    }
+
+    hasLargeStraight(counts) {
+        return (counts[1] === 1 && counts[2] === 1 && counts[3] === 1 && counts[4] === 1 && counts[5] === 1) ||
+               (counts[2] === 1 && counts[3] === 1 && counts[4] === 1 && counts[5] === 1 && counts[6] === 1);
+    }
+}
+
+export default YatzyEngine;
