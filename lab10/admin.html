@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - Hospital Triage System</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pYw..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="logo">
+                <span class="site-title">Healthcare Triage</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="user.html">User Page</a></li>
+                <li><a href="admin.html" class="active">Admin Page</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="admin-page">
+            <h2>Admin Dashboard</h2>
+            <p>Manage user submissions and prioritize cases based on severity.</p>
+            <div class="summary">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Contact Number</th>
+                            <th>Injury Type</th>
+                            <th>Pain Level</th>
+                            <th>Additional Info</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+          
+                        <tr>
+                            <td>John Doe</td>
+                            <td>+1234567890</td>
+                            <td>Severe</td>
+                            <td>9</td>
+                            <td>Requires immediate attention due to high pain level.</td>
+                            <td><button class="secondary-button"><i class="fas fa-trash-alt"></i> Remove</button></td>
+                        </tr>
+           
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Hospital Triage App © 2024 | <a href="#privacy">Privacy Policy</a></p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

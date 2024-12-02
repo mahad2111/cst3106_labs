@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Triage System</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pYw..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="logo-title">
+                <span class="site-title">Healthcare Triage</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="user.html">User Page</a></li>
+                <li><a href="admin.html">Admin Page</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Your Health, Our Priority</h2>
+                <p>Efficient triage systems to ensure timely and effective medical care.</p>
+                <a href="user.html" class="primary-button">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/healthcareprof.png" alt="Healthcare Professionals">
+            </div>
+        </section>
+
+        <section class="about-us">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="images/aboutus.png" alt="About Us">
+                <div class="about-text">
+                    <p>
+                        At Hospital Triage, we are dedicated to providing prompt and efficient medical assessments. Our state-of-the-art triage system ensures that every patient receives the appropriate level of care based on their individual needs.
+                    </p>
+                    <p>
+                        Our team of experienced healthcare professionals utilizes advanced technology to prioritize cases, reducing wait times and improving patient outcomes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="our-services">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Emergency Care</h3>
+                    <p>Immediate assessment and care for critical conditions.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Routine Check-ups</h3>
+                    <p>Comprehensive evaluations to maintain your health.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Specialist Consultations</h3>
+                    <p>Access to a wide range of medical specialists.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="why-choose-us">
+            <h2>Why Choose Us</h2>
+            <div class="why-content">
+                <div class="why-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Timely Service</h3>
+                    <p>Our efficient triage system minimizes wait times.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Expert Team</h3>
+                    <p>Experienced professionals dedicated to your care.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Patient-Centric</h3>
+                    <p>Your well-being is at the heart of everything we do.</p>
+                </div>
+            </div>
+        </section>
+
+ 
+        <section class="testimonials">
+            <h2>What Our Patients Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p>"Hospital Triage provided exceptional care during my emergency. The staff was compassionate and efficient."</p>
+                    <h4>- Jane Smith</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Thanks to the quick assessment, I received timely treatment that made all the difference."</p>
+                    <h4>- John Doe</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The triage system is well-organized and reduces unnecessary wait times. Highly recommend!"</p>
+                    <h4>- Emily Johnson</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Healthcare Street, MedCity, Country</p>
+                    <p><i class="fas fa-phone-alt"></i> +1 (234) 567-890</p>
+                    <p><i class="fas fa-envelope"></i> contact@hospitaltriage.com</p>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+                        
+                        <button type="submit" class="primary-button"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Hospital Triage App © 2024 | <a href="#privacy">Privacy Policy</a></p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

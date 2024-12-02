@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page - Hospital Triage System</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pYw..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="logo">
+                <span class="site-title">Healthcare Triage</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="user.html" class="active">User Page</a></li>
+                <li><a href="admin.html">Admin Page</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="user-page">
+            <h2>User Submission</h2>
+            <p>Please provide the necessary information for triage. Our system will prioritize your case based on the severity of your condition.</p>
+            <form action="#" method="post">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
+
+                <label for="contact-number">Contact Number:</label>
+                <input type="tel" id="contact-number" name="contact-number" required placeholder="e.g., +1234567890">
+
+                <label for="injury-type">Type of Injury:</label>
+                <select id="injury-type" name="injury-type" required>
+                    <option value="" disabled selected>Select injury type</option>
+                    <option value="minor">Minor</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="severe">Severe</option>
+                </select>
+
+                <label for="pain-level">Pain Level (1-10):</label>
+                <input type="number" id="pain-level" name="pain-level" min="1" max="10" required placeholder="1-10">
+
+                <label for="additional-info">Additional Information:</label>
+                <textarea id="additional-info" name="additional-info" rows="4" placeholder="Provide any additional details..."></textarea>
+
+                <button type="submit" class="primary-button"><i class="fas fa-paper-plane"></i> Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Hospital Triage App © 2024 | <a href="#privacy">Privacy Policy</a></p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
