@@ -44,8 +44,7 @@ Fonts
     
 
 ### Implementation in CSS
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cssCopy code/* Google Fonts Integration */  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');  /* Applying the font to the body */  body {      font-family: 'Open Sans', sans-serif;      font-weight: 400;  }   `
+`  /* Google Fonts Integration */  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');  /* Applying the font to the body */  body {      font-family: 'Open Sans', sans-serif;      font-weight: 400;  }   `
 
 Colour Palette
 --------------
@@ -71,7 +70,7 @@ Colour NameHEXUsageTrust Blue#007BFFPrimary buttons, links, and highlightsNeutra
 
 ### Implementation in CSS
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cssCopy code:root {      --primary-color: #007BFF; /* Trust Blue */      --secondary-color: #6C757D; /* Neutral Gray */      --accent-color: #28A745; /* Soothing Green */      --background-color: #F0F4F8; /* Light Background */      /* Additional color variables */      --header-background: #ffffff;      --header-shadow: rgba(0, 0, 0, 0.1);      --footer-background: #ffffff;      --button-primary-bg: #007BFF;      --button-primary-hover: #0056b3;      --button-secondary-bg: #6C757D;      --button-secondary-hover: #5a6268;      --input-border: #CED4DA;      --input-focus-border: #80BDFF;      --card-background: #ffffff;      --table-header-bg: #007BFF;      --table-header-color: #ffffff;      --table-row-hover: #f1f1f1;      --site-title-color: #007BFF; /* Title Color */  }   `
+Plain `  :root {      --primary-color: #007BFF; /* Trust Blue */      --secondary-color: #6C757D; /* Neutral Gray */      --accent-color: #28A745; /* Soothing Green */      --background-color: #F0F4F8; /* Light Background */      /* Additional color variables */      --header-background: #ffffff;      --header-shadow: rgba(0, 0, 0, 0.1);      --footer-background: #ffffff;      --button-primary-bg: #007BFF;      --button-primary-hover: #0056b3;      --button-secondary-bg: #6C757D;      --button-secondary-hover: #5a6268;      --input-border: #CED4DA;      --input-focus-border: #80BDFF;      --card-background: #ffffff;      --table-header-bg: #007BFF;      --table-header-color: #ffffff;      --table-row-hover: #f1f1f1;      --site-title-color: #007BFF; /* Title Color */  }   `
 
 App Components
 --------------
@@ -92,12 +91,10 @@ App Components
         
 
 **Implementation in HTML:**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   htmlCopy code  Hospital Triage - User ----------------------   `
+`   htmlCopy code  Hospital Triage - User ----------------------   `
 
 **Implementation in CSS:**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cssCopy codeh2 {      color: var(--primary-color);      font-size: 2em;      margin-bottom: 20px;      text-align: center;  }   `
+`   cssCopy codeh2 {      color: var(--primary-color);      font-size: 2em;      margin-bottom: 20px;      text-align: center;  }   `
 
 ### 2\. Buttons
 
@@ -116,11 +113,11 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 **Implementation in HTML:**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   htmlCopy codeSubmit  Remove   `
+`   Submit Button  Remove Button   `
 
 **Implementation in CSS:**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cssCopy code.primary-button {      background-color: var(--button-primary-bg);      color: #fff;      display: flex;      align-items: center;      gap: 10px;  }  .primary-button:hover {      background-color: var(--button-primary-hover);      transform: translateY(-2px);  }  .secondary-button {      background-color: var(--button-secondary-bg);      color: #fff;      border: 2px solid #fff;      display: flex;      align-items: center;      gap: 5px;  }  .secondary-button:hover {      background-color: var(--button-secondary-hover);      transform: translateY(-2px);  }   `
+`   .primary-button {      background-color: var(--button-primary-bg);      color: #fff;      display: flex;      align-items: center;      gap: 10px;  }  .primary-button:hover {      background-color: var(--button-primary-hover);      transform: translateY(-2px);  }  .secondary-button {      background-color: var(--button-secondary-bg);      color: #fff;      border: 2px solid #fff;      display: flex;      align-items: center;      gap: 5px;  }  .secondary-button:hover {      background-color: var(--button-secondary-hover);      transform: translateY(-2px);  }   `
 
 ### 3\. Input Fields
 
@@ -129,13 +126,10 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 *   **Functionality:** Enhances user experience by providing intuitive and accessible forms.
     
 
-**Implementation in HTML:**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   htmlCopy code   `
 
 **Implementation in CSS:**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cssCopy codeform input,  form select,  form textarea {      width: 100%;      padding: 12px 15px;      border: 1px solid var(--input-border);      border-radius: 5px;      font-size: 1em;      transition: border-color 0.3s, box-shadow 0.3s;  }  form input:focus,  form select:focus,  form textarea:focus {      border-color: var(--input-focus-border);      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);      outline: none;  }   `
+`   form input,  form select,  form textarea {      width: 100%;      padding: 12px 15px;      border: 1px solid var(--input-border);      border-radius: 5px;      font-size: 1em;      transition: border-color 0.3s, box-shadow 0.3s;  }  form input:focus,  form select:focus,  form textarea:focus {      border-color: var(--input-focus-border);      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);      outline: none;  }   `
 
 ### 4\. Tables
 
@@ -145,12 +139,10 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
     
 
 **Implementation in HTML:**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   htmlCopy code  Full Name  Contact Number  Injury Type  Pain Level  Additional Info  Action   `
+`    Full Name  Contact Number  Injury Type  Pain Level  Additional Info  Action   `
 
 **Implementation in CSS:**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cssCopy codetable {      width: 100%;      border-collapse: collapse;      margin-top: 20px;  }  th, td {      padding: 15px;      text-align: left;  }  th {      background-color: var(--table-header-bg);      color: var(--table-header-color);      font-size: 1.1em;  }  tbody tr:nth-child(even) {      background-color: #f9f9f9;  }  tbody tr:hover {      background-color: var(--table-row-hover);  }  td button {      padding: 8px 12px;      font-size: 0.9em;      display: flex;      align-items: center;      gap: 5px;  }   `
+ `{      width: 100%;      border-collapse: collapse;      margin-top: 20px;  }  th, td {      padding: 15px;      text-align: left;  }  th {      background-color: var(--table-header-bg);      color: var(--table-header-color);      font-size: 1.1em;  }  tbody tr:nth-child(even) {      background-color: #f9f9f9;  }  tbody tr:hover {      background-color: var(--table-row-hover);  }  td button {      padding: 8px 12px;      font-size: 0.9em;      display: flex;      align-items: center;      gap: 5px;  }   `
 
 Layout and Navigation
 ---------------------
@@ -224,35 +216,6 @@ Consistency
 *   **Simplified Maintenance:** Uniform design elements make it easier to update and manage the app's visual aspects.
     
 
-Accessibility Considerations
-----------------------------
-
-Ensuring accessibility is paramount to cater to all users, including those with disabilities. The following strategies have been implemented:
-
-1.  **ARIA Labels:**
-    
-    *   htmlCopy code
-        
-2.  **Keyboard Navigation:**
-    
-    *   Ensured that all links and buttons are accessible via keyboard (tab navigation).
-        
-3.  **Alt Texts:**
-    
-    *   htmlCopy code![Healthcare Professionals assisting patients](images/hero-image.jpg)
-        
-4.  **Contrast Ratios:**
-    
-    *   Verified that text and background color combinations meet [WCAG contrast standards](https://www.w3.org/WAI/standards-guidelines/wcag/#contrast-minimum).
-        
-5.  **Responsive Text:**
-    
-    *   Utilized relative units (em, rem) for font sizes to support user preferences and device settings.
-        
-6.  **Form Accessibility:**
-    
-    *   htmlCopy codeFull Name:
-        
 
 Conclusion
 ----------
